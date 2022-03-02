@@ -1,0 +1,318 @@
+//布局样式文件
+//公用颜色
+@border_color     : #0084ff;
+@long_divide_line : #054887;
+@short_divide_line: #12659b;
+
+#layout {
+    height            : 100%;
+    width             : 100%;
+    position          : relative;
+    //background-image: url("./../images/bg.png");
+    //background-size: cover;
+    background-color  : #0b276a00;
+}
+
+.header {
+    // height: 100%;
+    // width: calc(100% - 1rem);
+    // padding: 0 0.5rem;
+}
+
+.content {
+    position              : absolute;
+    height                : 100%;
+    // width: calc(100% - 1rem);
+    width                 : 100%;
+    // top: 5rem;
+    // margin: 1rem 0.5rem .5rem 0.5rem;
+    //     background: url("@/assets/images/body.png") no-repeat;
+    //     background-size: 100% 100%;
+}
+
+.content_main {
+    position: relative;
+    width   : 100%;
+    height  : 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width : 80%;
+}
+
+.button_area {
+    float        : right;
+    padding-right: 1rem;
+
+    .button {
+        background           : rgb(21, 49, 97);
+        border               : 1px solid rgb(29, 72, 130);
+        box-shadow           : 0 0 12px #0d68ad inset;
+        color                : #ffffff;
+        padding              : 0.3rem 1.2rem;
+        -webkit-border-radius: 2rem;
+        -moz-border-radius   : 2rem;
+        border-radius        : 2rem;
+        font-size            : 0.9rem;
+        cursor               : pointer;
+    }
+
+    .button:hover {
+        background: rgb(52, 126, 204);
+    }
+
+    .button_save {
+        background: rgb(255, 155, 0);
+        box-shadow: 0 0 12px #d08b3b inset;
+    }
+
+    .batchEdit_div {
+        position        : absolute;
+        z-index         : 940307;
+        background-color: rgb(29, 72, 130);
+        margin-left     : 3rem;
+        margin-top      : -0.6rem;
+        border          : 1px solid rgb(21, 49, 97);
+        border-radius   : 0.3rem;
+        padding         : 0.2rem 0.4rem;
+
+        li {
+            height     : 1.4rem;
+            line-height: 1.4rem;
+            cursor     : pointer;
+        }
+
+        li:hover {
+            color: #0eb1d7;
+        }
+    }
+}
+
+.tab_Title {
+    width        : calc(100% - 0.5rem);
+    height       : 2rem;
+    padding-right: 0.5rem;
+    background   : rgb(34, 84, 146);
+    border-left  : none;
+
+    table {
+        width       : 100%;
+        height      : 100%;
+        table-layout: fixed;
+
+        thead {
+            tr {
+                th {
+                    height     : 2rem;
+                    line-height: 2rem;
+                    position   : relative;
+                    box-sizing : border-box;
+                }
+            }
+        }
+    }
+}
+
+.tab_content {
+    width     : calc(100% + 0.5rem);
+    height    : calc(100% - 2rem);
+    overflow-y: scroll;
+
+    table {
+        width       : 100%;
+        height      : auto;
+        table-layout: fixed;
+
+        tbody {
+            width : 100%;
+            height: 100%;
+
+            tr {
+                &:nth-child(odd) {
+                    background: rgb(19, 53, 97);
+                }
+
+                &:nth-child(even) {
+                    background: rgb(11, 35, 80);
+                }
+
+                &:hover {
+                    background: rgb(29, 78, 144);
+                }
+
+                td {
+                    text-align    : center;
+                    height        : 1.8rem;
+                    position      : relative;
+                    font-size     : 0.8rem;
+                    //border-right: 1px solid #000D27;
+
+                    .button {
+                        background           : rgb(52, 126, 204);
+                        border               : 1px solid rgb(29, 72, 130);
+                        color                : #ffffff;
+                        padding              : 0.1rem 0.8rem;
+                        -webkit-border-radius: 2rem;
+                        -moz-border-radius   : 2rem;
+                        border-radius        : 2rem;
+                        font-size            : 0.9rem;
+                        cursor               : pointer;
+                        margin-top           : 0.1rem;
+
+                        img {
+                            margin-top: 0.1rem;
+                        }
+                    }
+                }
+
+                .el-select .el-input .el-select__caret {
+                    line-height: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+.bottomClass {
+    position       : absolute;
+    bottom         : 10rem;
+    left           : 50%;
+    transform      : translate(-50%, 50%);
+    width          : 50%;
+    height         : 10%;
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+
+    button {
+        width: 20%;
+    }
+}
+
+@keyframes leftFade {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -20%;
+    }
+}
+
+@keyframes leftCome {
+    0% {
+        left: -20%
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes rightCome {
+    0% {
+        right: -20%
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+
+@keyframes rightFade {
+    0% {
+        right: 0%
+    }
+
+    100% {
+        right: -20%;
+    }
+}
+
+.leftClassFade {
+    background     : pink;
+    position       : absolute;
+    left           : 0;
+    top            : 25%;
+    width          : 20%;
+    height         : 30%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    align-items    : center;
+    animation      : leftFade .2s linear forwards;
+
+    button {
+        width: 30%;
+    }
+}
+
+.leftClassCome {
+    background     : pink;
+    position       : absolute;
+    left           : 0;
+    top            : 25%;
+    width          : 20%;
+    height         : 30%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    align-items    : center;
+    animation      : leftCome .2s linear forwards;
+
+    button {
+        width: 30%;
+    }
+}
+
+.leftClass_noanimation {
+    background     : pink;
+    position       : absolute;
+    left           : 0;
+    top            : 25%;
+    width          : 20%;
+    height         : 30%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    align-items    : center;
+
+    button {
+        width: 30%;
+    }
+}
+
+.rightClassCome {
+    position  : absolute;
+    right     : 0;
+    top       : 50%;
+    float     : right;
+    width     : 20%;
+    height    : 90%;
+    background: yellowgreen;
+    animation : rightCome .2s linear forwards;
+    transform: translate(-10%,-50%);
+}
+
+.rightClassFade {
+    position  : absolute;
+    right     : 0;
+    top       : 25%;
+    float     : right;
+    width     : 20%;
+    height    : 30%;
+    background: yellowgreen;
+    animation : rightFade .2s linear forwards;
+}
+
+.rightClass_noAnimation {
+    display   : none;
+    position  : absolute;
+    right     : 0;
+    top       : 25%;
+    float     : right;
+    width     : 20%;
+    height    : 30%;
+    background: yellowgreen;
+}

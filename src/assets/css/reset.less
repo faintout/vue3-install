@@ -1,0 +1,392 @@
+//重写的样式文件
+/* CSS Document */
+* {
+    font-family: "Alibaba-PuHuiTi-Medium"
+}
+
+/* basic */
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, pre, form, ol, ul, li, fieldset, input, textarea, caption, div {
+    margin: 0;
+    padding: 0;
+}
+
+address, cite, code, dfn, em, h1, h2, h3, h4, h5, h6, strong, var, b {
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*select,option{background:#4b70a5;}*/
+html, body {
+    font-size: 15px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: #ffffff;
+}
+@media (max-width:1600px){
+    html{
+        font-size: 13px;
+    }
+}
+@media (max-width:1366px){
+    html{
+        font-size: 12px;
+    }
+}
+ol, ul, li {
+    list-style: none;
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+    font: normal 1rem/1.5em 'Alibaba-PuHuiTi-Medium', Verdana, Arial, Helvetica, sans-serif;
+}
+
+td, th, caption {
+    padding: 0;
+    font-weight: normal;
+}
+
+/* input */
+input [type=text] {
+    height: 0;
+    border: 0;
+    font-size: 1rem;
+}
+
+textarea {
+    margin: 0;
+    padding: 0;
+}
+span{
+    img{
+        cursor: pointer;
+        width: 1.2rem;
+        vertical-align: middle;
+    }
+}
+// select {
+//     font-size: 1rem;
+//     margin: 0;
+// }
+
+:focus {
+    outline: none;
+}
+
+/*for IE*/
+
+::-moz-focus-inner {
+    border-color: transparent;
+}
+
+/*for mozilla*/
+
+/* img */
+a img, :link img, :visited img {
+    border: 0;
+}
+
+fieldset {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+/* before after */
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+
+blockquote, q {
+    quotes: "";
+}
+
+a {
+    text-decoration: none;
+}
+
+/* float */
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+}
+
+.cl {
+    clear: both;
+}
+
+.cl:before {
+    clear: both;
+}
+
+.cl:after {
+    clear: both;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.red {
+    color: #f00;
+}
+
+/* margin padding */
+.m7 {
+    margin: 7px;
+}
+
+.m6 {
+    margin: 6px;
+}
+
+.mb1 {
+    margin-bottom: 1px;
+}
+
+.m10 {
+    margin: 10px;
+}
+
+.mtb10 {
+    margin: 10px 0;
+}
+
+.mrl8 {
+    margin: 0 8px;
+}
+
+.mr8 {
+    margin-right: 8px;
+}
+
+.mt4 {
+    margin-top: 4px;
+}
+
+.mt7 {
+    margin-top: 7px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mrl20 {
+    margin: 10px 40px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.ml15 {
+    margin-left: -15px;
+}
+
+.pr20 {
+    padding-right: 20px;
+}
+
+.pt4 {
+    padding-top: 4px;
+}
+
+.pl7 {
+    padding-left: 7px;
+}
+
+.mt6 {
+    margin-top: 6px;
+}
+
+.ml7 {
+    margin-left: 7px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+/* CSS Document */
+
+/* not designer make css add by zhangwei*/
+.hidden {
+    display: none;
+}
+
+/*.addItem{ background-color: #0000D9;}
+.lastItem {background-color: #D90000;}*/
+.addItem {
+    color: #87CEFA;
+}
+
+.lastItem {
+    color: #FFB6C1;
+}
+
+.lw {
+    width: 100px;
+}
+
+.td_col {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.border_hidden {
+    border-width: 1px 0px 1px 0px;
+}
+
+.border_right_hidden {
+    border-width: 1px 0px 1px 1px;
+}
+
+.border_left_hidden {
+    border-width: 1px 1px 1px 0px;
+}
+
+/*滚动条样式进行调整*/
+* {
+
+    scrollbar-3dlight-color: #022655; /*    设置滚动框的和滚动条箭头左上边缘的颜色*/
+    //scrollbar-highlight-color: #000000; /*设置滚动框的和滚动条箭头左上边缘的颜色*/
+    scrollbar-face-color: #022655; /*设置滚动框和滚动条箭头的颜色*/
+    scrollbar-arrow-color: #022655; /*设置滚动条箭头的颜色*/
+    //scrollbar-shadow-color: #000000; /*设置滚动框的和滚动条箭头右下边缘的颜色*/
+    //scrollbar-dark-shadow-color: #000000; /*设置滚动条槽的颜色*/
+
+}
+
+/*谷歌浏览器*/
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    //background-color: #000000;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #022655;
+    border-radius: 1rem;
+}
+
+// select {
+//     border: solid 1px #0eb1d7;
+//     appearance: none;
+//     -moz-appearance: none;
+//     -webkit-appearance: none;
+//     padding-right: 14px;
+//     padding-left: 15px;
+//     option {
+//         font-weight: normal;
+//         display: block;
+//         white-space: pre;
+//         min-height: 24px;
+//         padding: 0px 2px 1px;
+//     }
+
+// }
+
+// select::-ms-expand {
+//     display: none;
+// }
+
+input {
+    font-size: 1rem;
+    padding-left: 15px;
+
+}
+
+input[type=radio], input[type=checkbox] {
+    cursor: pointer;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+A:visited {
+    text-decoration: none;
+}
+
+A:link {
+    text-decoration: none;
+}
+.left_top,.left_bottom,.right_bottom,.right_top{
+  width: 0.6rem;
+  height: 0.6rem;
+  position: absolute;
+}
+.left_top{
+  border-top: 2px solid #40AFFE;
+  border-left: 2px solid #40AFFE;
+  left: -2px;
+  top: -2px;
+}
+.left_bottom{
+  border-bottom:2px solid #40AFFE;
+  border-left: 2px solid #40AFFE;
+  left: -2px;
+  bottom: -2px;
+}
+.right_top{
+  border-bottom:2px solid #40AFFE;
+  border-right: 2px solid #40AFFE;
+  right: -2px;
+  bottom: -2px;
+}
+.right_bottom{
+  border-top: 2px solid #40AFFE;
+  border-right: 2px solid #40AFFE;
+  right: -2px;
+  top: -2px;
+}
+.symbol {
+    width: 10px;
+    height: 10px;
+    background: #f2a016;
+    display: inline-block;
+    margin-left: 2rem;
+}
+.searchProblem {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    input {
+      height: 28px;
+      width: 15rem;
+      border-radius: 3px;
+      border: 1px #314c72 solid;
+      color: #8b93a2;
+      background: #173058;
+    }
+  }
+  .buttonclass {
+    display: inline-block;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 2px;
+    border: 1px #5e5132 solid;
+    background: #1c2e48;
+    color: #e79d1d !important;
+    width: 5rem;
+    height: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    img{
+        color: #e79d1d !important;
+    }
+  }
